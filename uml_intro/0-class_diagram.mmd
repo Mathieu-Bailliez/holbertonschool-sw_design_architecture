@@ -25,9 +25,9 @@ class Loan {
 	close_loan()
 }
 
-Library "1" --> "*" Book
-Library "1" --> "*" User
-Library "1" --> "*" Loan
+Library "1" o-- "*" Book
+Library "1" o-- "*" User
+Library "1" o-- "*" Loan
 
 Loan "*" --> "1" Book
 Loan "*" --> "1" User
